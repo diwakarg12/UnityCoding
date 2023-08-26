@@ -1,0 +1,255 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+.header{
+    background-color: green;
+    text-align: center;
+    display: inline-flex;
+    width: 100%;
+    font-size: 18px;
+
+}
+.header ul{
+    display: inline-flex;
+    list-style-type:none;
+    color: white;
+}
+.logo{
+    margin:-10px 5px 10px 10px;
+    display: block;
+    text-align: center;
+    color:white;
+    font-size:10px;
+}
+.logo img{
+    height: 110px;
+    width: 130px;
+    margin:0px 0px -50px 0px;
+}
+.header .btn{
+    display:inline-block;
+    margin: 30px 0px 30px 150px;
+    text-align: center;
+    color: white;
+    background-color: green;
+    width: 80px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.header .btn:hover{
+    background-color: greenyellow;
+    color: white;
+}
+.nav{
+    margin-left:200px;
+}
+.header ul li{
+    width:120px;
+    margin:25px 0px 30px 20px;
+    padding: 10px;
+}
+.header ul li a{
+    text-decoration: none;
+    color :white;
+}
+.active , .header ul li:hover{
+    background-color: yellowgreen;
+    border-radius: 5px;
+    text-decoration: underline;
+}
+.header .fa{
+    margin-right:7px ;
+}
+.sub-menu-1{
+    display: none;
+}
+.header ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background-color:green;
+    margin-top:15px;
+    margin-left:-50px;
+}
+.header ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin-right:20px;
+}
+.header ul li:hover .sub-menu-1 ul li{
+    width: 130px;
+    padding:10px;
+    border-bottom:1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.header ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.header ul li:hover .sub-menu-1 ul li a:hover{
+    color: greenyellow;
+
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position:absolute;
+    display: block;
+    margin-top:-40px;
+    margin-left:140px;
+    background-color: green;
+}
+
+.about-section{
+    background: url(pic.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.inner-container{
+    width:55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 100px;
+
+}
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.inner-container .text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.skills{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+ h2{
+    font-weight: 700;
+    text-align: center;
+    margin-top: 30px;
+}
+p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 5px 0 5px 0;
+}
+hr{
+    width: 30%;
+    margin:5px 0px 30px 445px;
+    border: 2px solid grey;
+    border-radius: 2px;
+}
+
+.about-mentor1{
+    background: url(pic.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 30px 0;
+    margin: 20px 300px 15px 50px;
+    border-radius: 10px;
+}
+.mentor1{
+    width:55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 30px;
+}
+.mentor1 h1{
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+.mentor1 .text1{
+    font-size: 13px;
+    color: #545454;
+    line-height: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.mentor1 .skills{
+    font-weight: 600;
+    font-size: 10px;
+}
+.about-mentor2{
+    min-height: 400px;
+    background: url(pic.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+    padding: 30px 0;
+    margin:15px 50px 10px 300px;
+    border-radius: 10px;
+}
+.mentor2{
+    width:55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 30px;
+}
+.mentor2 h1{
+    text-decoration: underline;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.mentor2 .text2{
+    font-size: 13px;
+    color: #545454;
+    line-height: 20px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.mentor2 .skills{
+    font-weight: 600;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .inner-container{
+        padding: 60px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .about-section{
+        background-size: 100%;
+        padding: 70px 30px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 40px;
+    }
+}

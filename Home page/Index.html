@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Unity Coding</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fonts/font-awesome.css">
+    <link rel="stylesheet" href="fonts/google-fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="style.css">
+    <!-- Chatbot -->
+    <link rel="stylesheet" type="text/css" href="js/jquery.convform.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.convform.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- Chatbot -->
+</head>
+
+<body>
+
+<!-- ChatBot Start -->
+<div class="chat_icon">
+	<i class="fa fa-comments" aria-hidden="true"></i>
+</div>
+
+<div class="chat_box">
+	<div class="my-conv-form-wrapper">
+		<form action="" method="GET" class="hidden">
+
+      <select data-conv-question="Hello! are you facing any issue then sorry for inconvenience. How can I help you ?" name="category">
+        <option value="Course">Course Related</option>
+        <option value="Games">Games Related</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <div data-conv-fork="category">
+        <div data-conv-case="Course">
+          <!-- <input type="text" name="domainName" data-conv-question="Please, tell me your domain name">     -->
+          <select data-conv-question="Can you please tell in which course you are facing difficulty ?" name="category" id="">
+              <option value="Javascript">Javascript</option>
+              <option value="PHP">PHP</option>
+              <option value="C++">C++</option>
+          </select>
+        </div>
+        <div data-conv-case="Games" data-conv-fork="first-question2">
+          <!-- <input type="text" name="companyName" data-conv-question="Please, enter your company name">  -->
+          <select data-conv-question="Can you please tell in which Game you are facing difficulty ?" name="category" id="">
+              <option value="Tik-Tak-Toe">Tik-Tak-Toe</option>
+              <option value="Snake">Snake</option>
+              <option value="Quiz">Quiz</option>
+          </select>
+        </div>
+      </div>
+
+       <input type="text" name="" data-conv-question="Please, Describe your problem Briefly"> 
+
+      <input type="text" name="name" data-conv-question="Please, Enter your name so that we can know you better">
+
+      <input type="text" data-conv-question="Hi {name}, <br> It's a pleasure to meet you." data-no-answer="true">
+
+      <input data-conv-question="Enter your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" type="email" name="email" required placeholder="What's your e-mail?">
+
+      <input type="number" data-conv-question="Enter your Phone Number" name="phone">
+
+      <select data-conv-question="Please Confirm">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+
+      <select data-conv-question= "We are very sorry that you are facing difficulty in our website, we will try to solve this problem as soon as possible and also Thank you for your feedback !" id="">
+	    <option value="">Awesome!</option>
+	  </select>
+
+  	</form>
+	</div>
+</div>
+<!-- ChatBot end -->
+    
+    <div class="header">
+        <div class="logo">
+            <a href="..\Home page\index.php"><img src="images\Logo.png" alt="Unity Coding"></a>
+            <h2>Unity Coding</h2>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="active"><i class="fa fa-home" aria-hidden="true"></i><a href="..\Home page\index.php">Home</a></li>
+                <li><i class="fa fa-user" aria-hidden="true"></i><a href="..\About US\about.html" target="_blank">About Us</a></li>
+                <li><i class="fa fa-book" aria-hidden="true"></i><a href="..\Courses\course.php" target="_blank">Courses</a>
+                </li>
+                <li><i class="fa fa-clone" aria-hidden="true"></i><a href="#">Services</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li class="hover-me"><a href="#course">eLearning</a></li>
+                            <li class="hover-me"><a href="#Games">Gaming</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="..\Contact Us\contact.php" target="_blank">Contact</a></li>
+                <li><i class="fa fa-sign-in" arial-hidden="true"></i><a href="..\Login\Signin.php">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="slides-container">
+        <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+
+            <div class="slide first">
+                <img src="images\img1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images\img2.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="images\img3.jpg" alt="">
+            </div>
+
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+        </div>
+        <div class="nevigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+        </div>
+        <script type="text/javascript">
+            var counter = 1;
+            setInterval(function () {
+                document.getElementById('radio' + counter).checked = true;
+                counter++;
+                if (counter > 3) {
+                    counter = 1;
+                }
+            }, 5000);
+        </script>
+    </section>
+
+
+    <section id="Games">
+        <h1>Let's Play Some Games</h1>
+        <hr>
+
+        <div id="game-list">
+            <a href="..\Games\bubble shooter\bubbleshooter.html" target="_blank">
+                <h4>Bubbleshooter</h4>
+                <img src="images/bubbleshooter.png">
+            </a>
+            <a href="../Games/SnakeGame/SnakeGame.html" target="_blank">
+                <h4>SnakeGame</h4>
+                <img src="images/snakeGame.jpg">
+            </a>
+            <a href="../Games/Quiz Game/Quiz.html" target="_blank">
+                <h4>Quiz Time</h4>
+                <img src="images/Quiz.png">
+            </a>
+            <a href="../Games/Tic Tac Toe/Tic Tac Toe.html" target="_blank">
+                <h4>Tic Tac Toe</h4>
+                <img src="images/Tic-Tac-Toe.png">
+            </a>
+        </div>
+    </section>
+
+
+    <section id="course">
+
+        <h1 class="heading">Our Latest Courses</h1>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="flip-right">
+                <img src="images/html.png" alt="">
+                <p>HTML is the standard markup language for document design to be
+                    displayed in a web browser it can be assisted by technology such as css and js.
+                </p>
+            </div>
+
+            <div class="box" data-aos="flip-down">
+                <img src="images/css.png" alt="">
+                <p>Css is a style sheet language uased for describing the presentation of a document written in
+                    HTML. Css is a cornerstone of the world wide web along side HTML and JS.
+                </p>
+            </div>
+
+            <div class="box" data-aos="flip-left">
+                <img src="images/js.png" alt="">
+                <p>javascript often abbreviated as JS, is a programming language that conforms to the ECMAScript
+                    specification JS is hih-level, often just-in-time compiled, and multi-paradism.</p>
+            </div>
+
+            <div class="box" data-aos="flip-right">
+                <img src="images/python.png" alt="">
+                <p>Python is an interpreted high-level general-purpose programing language.its language construct as
+                    well as its object-oriented approach aim to help programmers write-clear.</p>
+            </div>
+
+            <div class="box" data-aos="flip-up">
+                <img src="images/php.png" alt="">
+                <p>PHP is a general purpose scripting langage geared towards web development. itwas originally created
+                    by Danish-canadian programmer Rasmus Leedorf in 1994.</p>
+            </div>
+
+            <div class="box" data-aos="flip-right">
+                <img src="images/c++.png" alt="">
+                <p>C++ is a general-purpose programming language created by Bjaren Stroustrup as an extension of the
+                    C programming language or "C with classes"
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="service">
+
+        <h1 class="heading">What We Offer?</h1>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="flip-up">
+                <img src="images/teacher.png" alt="Teacher">
+                <div class="info">
+                    <h2>skilled teachers</h2>
+                    <p>here we have very skilled teacher and if you stuck at any point in the entire course then you can contact
+                         us through feedback form </p>
+                </div>
+            </div>
+
+            <div class="box" data-aos="flip-down">
+                <img src="images/service2.png" alt="24service">
+                <div class="info">
+                    <h2>24x7 hours service</h2>
+                    <p>we provide 24x7 service in which you can contact us any time for any course problem and get instant solution </p>
+                </div>
+            </div>
+
+            <div class="box" data-aos="flip-up">
+                <img src="images/certificate.png" alt="certificate">
+                <div class="info">
+                    <h2>certificate distribution</h2>
+                    <p>Currently we don't have this facility now but after some time we are planning to bring this facility into work</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section id="testimonial">
+
+        <h1 class="heading">What Our Students Says</h1>
+
+        <div class="box-container">
+
+            <div class="box" data-aos="flip-left">
+                <img src="images/student1.png" alt="">
+                <div class="info">
+                    <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Ad tempore ab dolore fuga praesentium, alias asperiores similique libero perspiciatis deserunt.<i
+                        class="fas fa-quote-right"></i></p>
+                    <h2>--Komal</h2>
+                </div>
+            </div>
+
+            <div class="box" data-aos="flip-right">
+                <img src="images/student3.png" alt="">
+                <div class="info">
+                    <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam quae minima pariatur consequatur odio veniam nam dolorum enim eum a?<i
+                            class="fas fa-quote-right"></i></p>
+                    <h2>--Ankit</h2>
+                </div>
+            </div>
+
+            <div class="box" data-aos="flip-left">
+                <img src="images/student2.png" alt="">
+                <div class="info">
+                    <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam quae minima pariatur consequatur odio veniam nam dolorum enim eum a?<i
+                            class="fas fa-quote-right"></i></p>
+                    <h2>--Munna</h2>
+                </div>
+            </div>
+
+            <div class="box" data-aos="flip-right">
+                <img src="images/student4.png" alt="">
+                <div class="info">
+                    <p><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quisquam quae minima pariatur consequatur odio veniam nam dolorum enim eum a?<i
+                            class="fas fa-quote-right"></i></p>
+                    <h2>--Abhishek</h2>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+     <section id="contact" class="container-fluid">
+
+        <h1 class="heading">GET IN TOUCH</h1>
+
+        <div class="row min-vh-75 align-items-center min-vw-100"> 
+
+            <div class="col-lg-5 col-md-8  mx-auto">
+
+                <form action="C:\xampp\htdocs\Minor Project\Home page/getintouch.php" data-aos="zoom-in" method="post">
+
+                    <div class="inputBox">
+                        <input type="text" name="name" id="name" required>
+                        <h3>Full Name</h3>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="email" name="email" id="email" required>
+                        <h3>E-mail</h3>
+                    </div>
+
+                    <div class="inputBox">
+                        <textarea name="feedback" id="feedback" cols="30" rows="10" required></textarea>
+                        <h3>Message</h3>
+                    </div>
+
+                    <div class="inputBox">
+                        <input type="Submit">
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+</body>
+
+</html>
+
+<!-- Script Lines -->
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        delay: 500
+    });
+</script>
+*/
