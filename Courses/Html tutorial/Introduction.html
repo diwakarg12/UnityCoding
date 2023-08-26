@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fonts/font-awesome.css">
+    <link rel="stylesheet" href="fonts/google-fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="introduction.css">
+    <title>HTML-Course</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="..\Home page\index.php"><img src="Logo.png" alt="Unity Coding"></a>
+            <h2>Unity Coding</h2>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="active"><i class="fa fa-home" aria-hidden="true"></i><a href="..\Home page\index.php">Home</a></li>
+                <li><i class="fa fa-user" aria-hidden="true"></i><a href="..\About US\about.html" target="_blank">About Us</a></li>
+                <li><i class="fa fa-book" aria-hidden="true"></i><a href="..\Courses\course.php" target="_blank">Courses</a>
+                </li>
+                <li><i class="fa fa-clone" aria-hidden="true"></i><a href="#">Services</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li class="hover-me"><a href="#course">eLearning</a></li>
+                            <li class="hover-me"><a href="#Games">Gaming</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="..\Contact Us\contact.php" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container1">
+    <h1>HTML Introduction</h1>
+    <hr>
+    <p class="intro">HTML is the standard markup language for creating Web pages.</p>
+    <hr>
+    
+    <h2>What is HTML?</h2>
+    <ul>
+    <li>HTML stands for Hyper Text Markup Language</li>
+      <li>HTML is the standard markup language for creating Web pages</li>
+      <li>HTML describes the structure of a Web page</li>
+      <li>HTML consists of a series of elements</li>
+      <li>HTML elements tell the browser how to display the content</li>
+      <li>HTML elements label pieces of content such as &quot;this is a heading&quot;, &quot;this 
+      is a paragraph&quot;, &quot;this is a link&quot;, etc.</li>
+    </ul>
+    
+    <h2>A Simple HTML Document</h2>
+    <h3>Example</h3>
+    <div class="example">
+     &lt;!DOCTYPE html&gt;<br>
+    &lt;html&gt;<br>&lt;head&gt;<br>&lt;title&gt;Page Title&lt;/title&gt;<br>
+     &lt;/head&gt;<br>
+    &lt;body&gt;<br><br>&lt;h1&gt;My First Heading&lt;/h1&gt;<br>&lt;p&gt;My first paragraph.&lt;/p&gt;<br><br>
+        &lt;/body&gt;<br>&lt;/html&gt;
+    </div>
+    <h3>Example Explained</h3>
+    <ul>
+    <li>The <code class="w3-codespan">&lt;!DOCTYPE html&gt;</code> declaration defines 
+    that this document is an HTML5 document</li>
+    <li>The <code class="w3-codespan">&lt;html&gt;</code> element is the root element of an HTML 
+    page</li>
+     <li>The <code class="w3-codespan">&lt;head&gt;</code> element contains meta information about the 
+     HTML page</li>
+     <li>The <code class="w3-codespan">&lt;title&gt;</code> element specifies a title for the 
+     HTML page (which is shown in the browser's title bar or in the page's tab)</li>
+     <li>The <code class="w3-codespan">&lt;body&gt;</code> element defines the 
+     document's body, and is a container for all the visible contents, such as 
+     headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+     <li>The <code class="w3-codespan">&lt;h1&gt;</code> element defines a large heading</li>
+     <li>The <code class="w3-codespan">&lt;p&gt;</code> element defines a paragraph</li>
+    </ul>
+    
+    <h2>What is an HTML Element?</h2>
+    <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
+    <div style="font-size:25px;padding:15px;margin:15px;">
+    <span style="color:brown"><span style="color:mediumblue">&lt;</span>tagname<span style="color:mediumblue">&gt;</span></span>Content goes here...<span style="color:brown"><span style="color:mediumblue">&lt;</span>/tagname<span style="color:mediumblue">&gt;</span></span>
+    </div>
+    
+    <p>The HTML <strong>element</strong> is everything from the start tag to the end tag:</p>
+    
+    <div style="font-size:25px;padding:15px;margin:15px;">
+    <span style="color:brown"><span style="color:mediumblue">&lt;<span style="color:brown">h1</span>&gt;</span></span>My 
+      First Heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span>
+    </div>
+    
+    <div style="font-size:20px;padding:15px;margin:15px;">
+    <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>My first paragraph.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+    </div>
+    
+    <table class="ws-table-all notranslate">
+    <tr>
+    <th>Start tag</th>
+    <th>Element content</th>
+    <th>End tag</th>
+    </tr>
+    <tr>
+    <td>&lt;h1&gt;</td>
+    <td>My First Heading</td>
+    <td>&lt;/h1&gt;</td>
+    </tr>
+    <tr>
+    <td>&lt;p&gt;</td>
+    <td>My first paragraph.</td>
+    <td>&lt;/p&gt;</td>
+    </tr>
+    <tr>
+    <td>&lt;br&gt;</td>
+    <td><em>none</em></td>
+    <td><em>none</em></td>
+    </tr>
+    </table>
+    
+    <div class="w3-panel w3-note">
+    <p><strong>Note:</strong> Some HTML elements have no content (like the &lt;br&gt; 
+    element). These elements are called empty elements. Empty elements do not have an end tag!</p>
+    </div>
+    
+    <h2>Web Browsers</h2>
+    <p>The purpose of a web browser (Chrome, Edge, Firefox, Safari) is to read HTML documents and display them 
+    correctly.</p>
+    <p>A browser does not display the HTML tags, but uses them to determine how to display the document:</p>
+    <p><img alt="View in Browser" src="img_chrome.png" class="w3-image"></p>
+    
+    <h2>HTML Page Structure</h2>
+    <p>Below is a visualization of an HTML page structure:</p>
+    <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd">&lt;html&gt;
+    <div style="width:90%;border:1px solid grey;padding:3px;margin:20px">&lt;head&gt;
+    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;title&gt;Page title&lt;/title&gt;
+    </div>
+    &lt;/head&gt;
+    </div>
+    <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd">&lt;body&gt;
+    <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
+    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;This is a heading&lt;/h1&gt;</div>
+    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+    <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is another paragraph.&lt;/p&gt;</div>
+    </div>
+    &lt;/body&gt;
+    </div>
+    &lt;/html&gt;
+    </div>
+    <div class="w3-panel w3-note">
+    <p style="margin-top: 10px;"><strong>Note:</strong> The content inside the &lt;body&gt; section (the white area above) 
+    will be displayed in a browser. The content inside the &lt;title&gt; element will be 
+    shown in the browser's title bar or in the page's tab.</p>
+    </div>
+    
+    <h2>HTML History</h2>
+    <p>Since the early days of the World Wide Web, there have been many versions of HTML:</p>
+    <table class="ws-table-all notranslate">
+      <tr>
+        <th>Year</th>
+        <th>Version</th>
+      </tr>
+      <tr>
+        <td>1989</td>
+        <td>Tim Berners-Lee invented www</td>
+      </tr>
+      <tr>
+        <td>1991</td>
+        <td>Tim Berners-Lee invented HTML</td>
+      </tr>
+      <tr>
+        <td>1993</td>
+        <td>Dave Raggett drafted HTML+</td>
+      </tr>
+      <tr>
+        <td>1995</td>
+        <td>HTML Working Group defined HTML 2.0</td>
+      </tr>
+      <tr>
+        <td>1997</td>
+        <td>W3C Recommendation: HTML 3.2</td>
+      </tr>
+      <tr>
+        <td>1999</td>
+        <td>W3C Recommendation: HTML 4.01</td>
+      </tr>
+      <tr>
+        <td>2000</td>
+        <td>W3C Recommendation: XHTML 1.0</td>
+      </tr>
+      <tr>
+        <td>2008</td>
+        <td>WHATWG HTML5 First Public Draft</td>
+      </tr>
+      <tr>
+        <td>2012</td>
+        <td><a href="http://whatwg.org/html/" target="_blank">WHATWG HTML5 Living Standard</a></td>
+      </tr>
+      <tr>
+        <td>2014</td>
+        <td><a href="http://www.w3.org/TR/html5/" target="_blank">W3C Recommendation: HTML5</a></td>
+      </tr>
+      <tr>
+        <td>2016</td>
+        <td>W3C Candidate Recommendation: HTML 5.1</td>
+      </tr>
+      <tr>
+        <td>2017</td>
+        <td><a href="http://www.w3.org/TR/html51/" target="_blank">W3C Recommendation: HTML5.1 2nd Edition</a></td>
+      </tr>
+      <tr>
+        <td>2017</td>
+        <td><a href="http://www.w3.org/TR/html52/" target="_blank">W3C Recommendation: HTML5.2</a></td>
+      </tr>
+    </table>
+      </div>
+      <hr>
+      <ul class="navigation">
+        <li><a href="" class="prev"> prev </a></li>
+        <li class="pageNumber active"><a href="..\Courses/Html tutorial\Introduction.html" class="">1</a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Editors.html" target="_blank" >2</a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Html Basics.html" target="_blank">3</a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Elements.html" target="_blank">4</a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Attribute.html" target="_blank">5</a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Heading.html" target="_blank">6</a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Paragraph.html" target="_blank">7</a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Style.html" target="_blank">8</a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Formatting.html" target="_blank">9</a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Links.html" target="_blank">10</a></li>
+        <li><a href="" class="next"> Next </a></li>
+      </ul>
+      <hr>
+
+    <footer>
+        <div class="footer1">
+            <div class="link1">
+                <h3>ABOUT UNITY CODING</h3>
+                <p>This is E-learning cum gaming website developed for the persons who want to learn
+                    the development of games and other applications and also want to play online games
+                    but they have don’t have enough space in their phone to download so we develop website
+                    games so that they can play games by simply login to our website.</p>
+            </div>
+            <div class="link2">
+                <h3>LEARNING</h3>
+                <a href="">ABOUT</a>
+                <a href="">GAMING</a>
+                <a href="">COURSES</a>
+            </div>
+            <div class="link3">
+                <h3>ENGAGE US</h3>
+                <a href="">BLOG</a>
+                <a href="">CONTACT</a>
+                <a href="">MARKETTING</a>
+            </div>
+            <div class="link4">
+                <h3>LEGAL</h3>
+                <a href="">TEAM</a>
+                <a href="">MENTORS</a>
+                <a href="">DESIGNER</a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer2">
+            <div class="copyright">
+                <p>&copy 2021 Unity Coding Inc.</p>
+                <p>All Right Reserved</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/diwakar.giri.792" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/mr._diwakar_011/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCuUJmEFZu4z46ddopk7A8JQ" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/diwakar-giri-2a263b192/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javaScript">
+      $(document).ready(function(){
+        $('.next').click(function(){
+          $('.navigation').find('.pageNumber.active').next().addClass('active');
+          $('.navigation').find('.pageNumber.active').prev().addClass('active');
+        })
+        $('.prev').click(function(){
+            $('.navigation').find('.pageNumber.active').prev().addClass('active');
+            $('.navigation').find('.pageNumber.active').next().addClass('active');
+      })
+    </script>
+</body>
+</html>

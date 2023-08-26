@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fonts/font-awesome.css">
+    <link rel="stylesheet" href="fonts/google-fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="paragraph.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="..\Home page\index.php"><img src="Logo.png" alt="Unity Coding"></a>
+            <h2>Unity Coding</h2>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="active"><i class="fa fa-home" aria-hidden="true"></i><a href="..\Home page\index.php">Home</a></li>
+                <li><i class="fa fa-user" aria-hidden="true"></i><a href="..\About US\about.html" target="_blank">About Us</a></li>
+                <li><i class="fa fa-book" aria-hidden="true"></i><a href="..\Courses\course.php" target="_blank">Courses</a>
+                </li>
+                <li><i class="fa fa-clone" aria-hidden="true"></i><a href="#">Services</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li class="hover-me"><a href="#course">eLearning</a></li>
+                            <li class="hover-me"><a href="#Games">Gaming</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="..\Contact Us\contact.php" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+<div class="container7">
+    <h1>HTML <span class="color_h1">Paragraphs</span></h1>
+    <hr>
+    <p style="text-align: center;">A paragraph always starts on a new line, and is usually a block of text.</p>
+    <hr>
+    
+    <h2>HTML Paragraphs</h2>
+    <p>The HTML <code class="w3-codespan">&lt;p&gt;</code> element defines a paragraph.</p>
+    <p>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+    <div class="example1">
+    <h3>Example</h3>
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+    &lt;p&gt;This is another paragraph.&lt;/p&gt;
+    </div>
+    
+    <h2>HTML Display</h2>
+    <p>You cannot be sure how HTML will be displayed.</p>
+    <p>Large or small screens, and resized windows will create different results. </p>
+    <p>With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.</p>
+    <p>The browser will automatically remove any extra spaces and lines when the page is 
+    displayed:</p>
+    <div class="example1">
+    <h3>Example</h3>
+     &lt;p&gt;<br>This paragraph<br>contains a lot of lines<br>in the source code,<br>but 
+     the browser <br>ignores it.<br>&lt;/p&gt;<br><br>&lt;p&gt;<br>This paragraph<br>contains&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+     a lot of spaces<br>in the source&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+     code,<br>but the&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; browser <br>ignores 
+     it.<br>&lt;/p&gt;</div>
+   
+    <h2>HTML Horizontal Rules</h2>
+    <p>The <code class="w3-codespan">&lt;hr&gt;</code> tag defines a thematic break in an HTML page, and is most often 
+    displayed as a horizontal rule.</p>
+    <p>The <code class="w3-codespan">&lt;hr&gt;</code> element is used to separate content (or define a change) in an HTML 
+    page:</p>
+    <div class="example1">
+    <h3>Example</h3>
+     &lt;h1&gt;This is heading 1&lt;/h1&gt;<br>&lt;p&gt;This is some text.&lt;/p&gt;<br>&lt;hr&gt;<br>&lt;h2&gt;This is heading 2&lt;/h2&gt;<br>&lt;p&gt;This is some other text.&lt;/p&gt;<br>&lt;hr&gt;
+    </div>
+    <p>The <code class="w3-codespan">&lt;hr&gt;</code> tag is an empty tag, which means that it has no end tag.</p>
+
+    
+    <h2>HTML Line Breaks</h2>
+    <p>The HTML <code class="w3-codespan">&lt;br&gt;</code> element defines a line break.</p>
+    <p>Use <code class="w3-codespan">&lt;br&gt;</code> if you want a line break (a new line) without starting a new paragraph:</p>
+    <h3>Example</h3>
+    <div class="example2">
+    <div class="example21">
+    &lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;
+</div></div>
+
+    <p>The <code class="w3-codespan">&lt;br&gt;</code> tag is an empty tag, which means that it has no end tag.</p>
+
+    
+    <h2>The Poem Problem</h2>
+    <p>This poem will display on a single line:</p>
+    <div class="example1">
+    <h3>Example</h3>
+     &lt;p&gt;<br>&nbsp; My Bonnie lies over 
+     the ocean.<br><br>&nbsp; My Bonnie lies over the sea.<br><br>&nbsp; My Bonnie 
+     lies over the ocean.<br><br>&nbsp; Oh, bring back my Bonnie to me.<br>&lt;/p&gt;</div>
+    
+    <h2>Solution - The HTML &lt;pre&gt; Element</h2>
+    <p>The HTML <code class="w3-codespan">&lt;pre&gt;</code> element defines preformatted text.</p>
+    <p>The text inside a <code class="w3-codespan">&lt;pre&gt;</code> element is displayed in a fixed-width font (usually 
+    Courier), and it preserves both spaces and line breaks:</p>
+    <div class="example1">
+    <h3>Example</h3>
+     &lt;pre&gt;<br>&nbsp; My Bonnie lies over the ocean.<br>
+    <br>&nbsp; My Bonnie lies over the sea.<br><br>&nbsp; My Bonnie lies over the 
+    ocean.<br><br>&nbsp; Oh, bring back my Bonnie to me.<br>&lt;/pre&gt;
+    </div>
+    
+    <h2>HTML Tag Reference</h2>
+    <p>W3Schools' tag reference contains additional information about HTML elements and their attributes.</p>
+    <table class="ws-table-all notranslate">
+    <tr>
+     <th style="width: 200px; height: 50px;">Tag</th>
+     <th style="width: 700px;">Description</th>
+    </tr>
+    <tr>
+      <td style="padding-left: 80px; height: 30px;"><a href="/tags/tag_p.asp">&lt;p&gt;</a></td>
+      <td style="padding-left: 300px; height: 30px;">Defines a paragraph</td>
+    </tr>
+      <tr>
+      <td style="padding-left: 80px; height: 30px;"><a href="/tags/tag_hr.asp">&lt;hr&gt;</a></td>
+      <td style="padding-left: 300px; height: 30px;">Defines a thematic change in the content</td>
+      </tr>
+    <tr>
+      <td style="padding-left: 80px; height: 30px;"><a href="/tags/tag_br.asp">&lt;br&gt;</a></td>
+      <td style="padding-left: 300px; height: 30px;">Inserts a single line break</td>
+    </tr>
+    <tr>
+      <td style="padding-left: 80px; height: 30px;"><a href="/tags/tag_pre.asp">&lt;pre&gt;</a></td>
+      <td style="padding-left: 300px; height: 30px;">Defines pre-formatted text</td>
+    </tr>
+    </table>
+    <div class="w3-note w3-panel">
+      <p>For a complete list of all available HTML tags, visit our <a href="/tags/default.asp">HTML Tag Reference</a>.</p>
+    </div>
+    </div>
+    <hr>
+    <ul class="navigation">
+        <li><a href="" class="prev"> prev </a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Introduction.html" target="_blank">1</a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Editors.html" target="_blank">2</a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Html Basics.html" target="_blank">3</a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Elements.html" target="_blank">4</a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Attribute.html" target="_blank">5</a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Heading.html" target="_blank">6</a></li>
+        <li class="pageNumber active"><a href="..\Html tutorial\Paragraph.html" target="_blank">7</a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Style.html" target="_blank">8</a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Formatting.html" target="_blank">9</a></li>
+        <li class="pageNumber"><a href="..\Html tutorial\Links.html" target="_blank">10</a></li>
+        <li><a href="" class="next"> Next </a></li>
+      </ul>
+    <hr>
+    <script type="text/javaScript">
+        $(document).ready(function(){
+          $('.next').click(function(){
+            $('.navigation').find('.pageNumber.active').next().addClass('active');
+            $('.navigation').find('.pageNumber.active').prev().addClass('active');
+          })
+          $('.prev').click(function(){
+              $('.navigation').find('.pageNumber.active').prev().addClass('active');
+              $('.navigation').find('.pageNumber.active').next().addClass('active');
+        })
+      </script>
+
+
+
+    <footer>
+        <div class="footer1">
+            <div class="link1">
+                <h3>ABOUT UNITY CODING</h3>
+                <p>This is E-learning cum gaming website developed for the persons who want to learn
+                    the development of games and other applications and also want to play online games
+                    but they have don’t have enough space in their phone to download so we develop website
+                    games so that they can play games by simply login to our website.</p>
+            </div>
+            <div class="link2">
+                <h3>LEARNING</h3>
+                <a href="">ABOUT</a>
+                <a href="">GAMING</a>
+                <a href="">COURSES</a>
+            </div>
+            <div class="link3">
+                <h3>ENGAGE US</h3>
+                <a href="">BLOG</a>
+                <a href="">CONTACT</a>
+                <a href="">MARKETTING</a>
+            </div>
+            <div class="link4">
+                <h3>LEGAL</h3>
+                <a href="">TEAM</a>
+                <a href="">MENTORS</a>
+                <a href="">DESIGNER</a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer2">
+            <div class="copyright">
+                <p>&copy 2021 Unity Coding Inc.</p>
+                <p>All Right Reserved</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/diwakar.giri.792" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/mr._diwakar_011/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCuUJmEFZu4z46ddopk7A8JQ" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/diwakar-giri-2a263b192/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

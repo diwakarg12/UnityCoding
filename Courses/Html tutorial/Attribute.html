@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fonts/font-awesome.css">
+    <link rel="stylesheet" href="fonts/google-fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="attribute.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="..\Home page\index.php"><img src="Logo.png" alt="Unity Coding"></a>
+            <h2>Unity Coding</h2>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="active"><i class="fa fa-home" aria-hidden="true"></i><a href="..\Home page\index.php">Home</a></li>
+                <li><i class="fa fa-user" aria-hidden="true"></i><a href="..\About US\about.html" target="_blank">About Us</a></li>
+                <li><i class="fa fa-book" aria-hidden="true"></i><a href="..\Courses\course.php" target="_blank">Courses</a>
+                </li>
+                <li><i class="fa fa-clone" aria-hidden="true"></i><a href="#">Services</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li class="hover-me"><a href="#course">eLearning</a></li>
+                            <li class="hover-me"><a href="#Games">Gaming</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="..\Contact Us\contact.php" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+<div class="container5">
+<h1>HTML Attributes</h1>
+<hr> 
+<p style="text-align: center;">HTML attributes provide additional information about HTML elements.</p>
+<hr>
+
+<h2>HTML Attributes</h2>
+<ul>
+  <li>All HTML elements can have <b>attributes</b></li>
+  <li>Attributes provide <b>additional information</b> about elements</li>
+  <li>Attributes are always specified in <b>the start tag</b></li>
+  <li>Attributes usually come in name/value pairs like: <b>name=&quot;value&quot;</b></li>
+</ul>
+
+<h2>The href Attribute</h2>
+<p>The <code style="color: crimson; background-color:lightgrey;">&lt;a&gt;</code> tag defines a hyperlink. The 
+<code style="color: crimson; background-color:lightgrey;">href</code> attribute specifies the URL of the page 
+the link goes to:</p>
+
+<h3>Example</h3>
+<div class="example2">
+<div class="example21">
+    &lt;a href=&quot;https://www.unity/coding.com&quot;&gt;<b>Visit Unity Coding</b>&lt;/a&gt;
+    </div></div>
+<p>You will learn more about links in our <a href="html_links.html">HTML Links
+chapter</a>.</p>
+<h2>The src Attribute</h2>
+<p>The <code style="color: crimson; background-color:lightgrey;">&lt;img&gt;</code> tag is used to embed an 
+image in an HTML page. The <code style="color: crimson; background-color:lightgrey;">src</code> attribute 
+specifies the path to the image to be displayed:</p>
+
+<h3>Example</h3>
+<div class="example2">
+<div class="example21">
+&lt;img src=&quot;img_girl.jpg&quot;&gt;
+</div></div>
+<p>There are two ways to specify the URL in the <code style="color: crimson; background-color:lightgrey;">src</code> 
+attribute:</p>
+<p><strong>1. Absolute URL</strong> - Links to an external image that is hosted 
+on another website. Example: <span style="word-wrap: break-word;">src=&quot;https://www.unity/coding.com/images/img_girl.jpg&quot;</span>.</p>
+<p><strong>Notes:</strong> External images might be under copyright. If you do 
+not get permission to use it, you may be in violation of copyright laws. In 
+addition, you cannot control external images; it can suddenly be removed or 
+changed.</p>
+<p><strong>2. Relative URL</strong> - Links to an image that is hosted within 
+the website. Here, the URL does not include the domain name. If the URL begins 
+without a slash, it will be relative to the current page. Example: src=&quot;img_girl.jpg&quot;. 
+If the URL begins with a slash, it will be relative to the domain. Example: src=&quot;/images/img_girl.jpg&quot;.</p>
+<p><strong>Tip:</strong> It is almost always best to use relative URLs. They 
+will not break if you change domain.</p>
+
+<h2>The Width and Height Attributes</h2>
+<p>The <code style="color: crimson; background-color:lightgrey;">&lt;img&gt;</code> tag should also contain the
+<code style="color: crimson; background-color:lightgrey;">width</code> and <code style="color: crimson; background-color:lightgrey;">
+height</code> attributes, which specifies the width and 
+height of the image (in pixels):</p>
+
+<h3>Example</h3>
+<div class="example2">
+<div class="example21">
+&lt;img src=&quot;img_girl.jpg&quot; width=&quot;500&quot; height=&quot;600&quot;&gt;
+</div></div>
+
+<h2>The alt Attribute</h2>
+<p>The required <code style="color: crimson; background-color:lightgrey;">alt</code> attribute for the <code style="color: crimson; background-color:lightgrey;">&lt;img&gt;</code> 
+tag specifies an 
+alternate text for an image, if the image for some reason cannot be displayed. 
+This can be due to 
+slow connection, or an error in the <code style="color: crimson; background-color:lightgrey;">src</code> attribute, or if the user uses a screen 
+reader.</p>
+
+<h3>Example</h3>
+<div class="example2">
+    <div class="example21">
+ &lt;img src=&quot;img_girl.jpg&quot; alt=&quot;Girl 
+  with a jacket&quot;&gt;
+</div></div>
+
+<h3>Example</h3>
+<p>See what happens if we try to display an image that does not exist:</p>
+<div class="example2">
+    <div class="example21">
+ &lt;img src=&quot;img_typo.jpg&quot; alt=&quot;Girl 
+  with a jacket&quot;&gt;
+</div></div>
+<p>You will learn more about images in our <a href="html_images.asp">HTML Images chapter</a>.</p>
+
+<h2>The style Attribute</h2>
+<p>The <code style="color: crimson; background-color:lightgrey;">style</code> attribute is used to add styles to 
+an element, such as color, font, size, and more.</p>
+
+<h3>Example</h3>
+<div class="example2">
+    <div class="example21">
+&lt;p style=&quot;color:red;&quot;&gt;This is a red paragraph.&lt;/p&gt;
+  </div></div>
+<p>You will learn more about styles in our <a href="html_styles.asp">HTML Styles chapter</a>.</p>
+
+<h2>The lang Attribute</h2>
+<p>You should always include the <code style="color: crimson; background-color:lightgrey;">lang</code> attribute 
+inside the <code style="color: crimson; background-color:lightgrey;">&lt;html&gt;</code> tag, to declare the 
+language of the Web page. This is meant to assist search engines and browsers.</p>
+<p>The following example specifies English as the language:</p>
+<div class="example1">
+&lt;!DOCTYPE html&gt;<br>&lt;html lang=&quot;en&quot;&gt;<br>&lt;body&gt;<br>...<br>&lt;/body&gt;<br>&lt;/html&gt;
+</div>
+<p>Country codes can also be added to the language code in the <code style="color: crimson; background-color:lightgrey;">lang</code> 
+attribute. So, the first two characters define the language of the HTML page, 
+and the last two characters define the country.</p>
+<p>The following example specifies English as the language and United States as 
+the country:</p>
+<div class="example1">
+&lt;!DOCTYPE html&gt;<br>&lt;html lang=&quot;en-US&quot;&gt;<br>&lt;body&gt;<br>...<br>&lt;/body&gt;<br>&lt;/html&gt;
+</div>
+<p>You can see all the language codes in our
+<a href="/tags/ref_language_codes.asp">HTML Language Code Reference</a>.</p>
+
+
+<h2>The title Attribute</h2>
+<p>The <code style="color: crimson; background-color:lightgrey;">title</code> attribute defines some extra 
+information about an 
+element.</p>
+<p>The value of the title attribute will be displayed as a tooltip when 
+you mouse over the element:</p>
+
+<h3>Example</h3>
+<div class="example2">
+    <div class="example21">
+ &lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt;
+</div></div>
+
+<h2>We Suggest: Always Use Lowercase Attributes</h2>
+<p>The HTML standard does not require lowercase attribute names.</p>
+<p>The title attribute (and all other attributes) can be written with uppercase or lowercase 
+like <strong>title</strong> or <strong>TITLE</strong>.</p>
+<p>However, Unity Coding <strong>recommends</strong> lowercase attributes in HTML, and <strong>demands</strong> 
+lowercase attributes for stricter document types like XHTML.</p>
+<div class="w3-panel w3-note">
+  <p>At Unity Coding we always use lowercase attribute names.</p>
+</div>
+
+<h2>We Suggest: Always Quote Attribute Values</h2>
+<p>The HTML standard does not require quotes around attribute values.</p>
+<p>However, Unity Coding <b>recommends</b> quotes in HTML, and <strong>demands</strong> quotes for 
+stricter document types like XHTML.</p>
+
+<h3>Good:</h3>
+<div class="example2">
+    <div class="example21">
+  &lt;a href=&quot;https://www.unity/coding.com/html/&quot;&gt;Visit our HTML tutorial&lt;/a&gt;
+</div></div>
+
+<h3>Bad:</h3>
+<div class="example2">
+    <div class="example21">
+  &lt;a href=https://www.unity/coding.com/html/&gt;Visit our HTML tutorial&lt;/a&gt;
+</div></div>
+<p>Sometimes you have to use quotes. This example will not display 
+the title attribute correctly, because it contains a space:</p>
+
+<h3>Example</h3>
+<div class="example2">
+    <div class="example21">
+ &lt;p
+ title=About unitycoding&gt;
+</div></div>
+
+<div class="w3-panel w3-note">
+  <p>&nbsp;At Unity Coding we always use quotes around attribute values.</p>
+</div>
+
+<h2>Single or Double Quotes?</h2>
+<p>Double quotes around attribute values are the most common in HTML, but single 
+quotes can also be used.</p>
+<p>In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:</p>
+<div class="example2">
+    <div class="example21">
+&lt;p title='John &quot;ShotGun&quot; Nelson'&gt;
+</div></div>
+<p>Or vice versa:</p>
+
+<div class="example2">
+    <div class="example21">
+&lt;p title=&quot;John 'ShotGun' Nelson&quot;&gt;
+</div></div>
+
+<h2>Chapter Summary</h2>
+<ul>
+  <li>All HTML elements can have <strong>attributes</strong></li>
+  <li>The <code style="color: crimson; background-color:lightgrey;">href</code> attribute of <code style="color: crimson; background-color:lightgrey;">
+  &lt;a&gt;</code> specifies the URL of the page the link goes to</li>
+  <li>The <code style="color: crimson; background-color:lightgrey;">src</code> attribute of <code style="color: crimson; background-color:lightgrey;">
+  &lt;img&gt;</code> specifies the path to the image to be displayed</li>
+  <li>The <code style="color: crimson; background-color:lightgrey;">width</code> and <code style="color: crimson; background-color:lightgrey;">height</code> attributes 
+  of <code style="color: crimson; background-color:lightgrey;">&lt;img&gt;</code> provide size information for images</li>
+  <li>The <code style="color: crimson; background-color:lightgrey;">alt</code> attribute of <code style="color: crimson; background-color:lightgrey;">
+  &lt;img&gt;</code> provides an alternate text for an image</li>
+  <li>The <code style="color: crimson; background-color:lightgrey;">style</code> attribute is used to add styles 
+  to an element, such as color, font, size, and more</li>
+  <li>The <code style="color: crimson; background-color:lightgrey;">lang</code> attribute 
+  of the <code style="color: crimson; background-color:lightgrey;">&lt;html&gt;</code> tag declares the 
+  language of the Web page</li>
+  <li>The <code style="color: crimson; background-color:lightgrey;">title</code> attribute defines some extra 
+  information about an element</li>
+</ul>
+</div>
+<hr>
+<ul class="navigation">
+    <li><a href="" class="prev"> prev </a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Introduction.html" target="_blank">1</a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Editors.html" target="_blank">2</a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Html Basics.html" target="_blank">3</a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Elements.html" target="_blank">4</a></li>
+    <li class="pageNumber active"><a href="..\Html tutorial\Attribute.html" target="_blank">5</a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Heading.html" target="_blank">6</a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Paragraph.html" target="_blank">7</a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Style.html" target="_blank">8</a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Formatting.html" target="_blank">9</a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Links.html" target="_blank">10</a></li>
+    <li><a href="" class="next"> Next </a></li>
+  </ul>
+<hr>
+<script type="text/javaScript">
+    $(document).ready(function(){
+      $('.next').click(function(){
+        $('.navigation').find('.pageNumber.active').next().addClass('active');
+        $('.navigation').find('.pageNumber.active').prev().addClass('active');
+      })
+      $('.prev').click(function(){
+          $('.navigation').find('.pageNumber.active').prev().addClass('active');
+          $('.navigation').find('.pageNumber.active').next().addClass('active');
+    })
+  </script>
+
+    <footer>
+        <div class="footer1">
+            <div class="link1">
+                <h3>ABOUT UNITY CODING</h3>
+                <p>This is E-learning cum gaming website developed for the persons who want to learn
+                    the development of games and other applications and also want to play online games
+                    but they have don’t have enough space in their phone to download so we develop website
+                    games so that they can play games by simply login to our website.</p>
+            </div>
+            <div class="link2">
+                <h3>LEARNING</h3>
+                <a href="">ABOUT</a>
+                <a href="">GAMING</a>
+                <a href="">COURSES</a>
+            </div>
+            <div class="link3">
+                <h3>ENGAGE US</h3>
+                <a href="">BLOG</a>
+                <a href="">CONTACT</a>
+                <a href="">MARKETTING</a>
+            </div>
+            <div class="link4">
+                <h3>LEGAL</h3>
+                <a href="">TEAM</a>
+                <a href="">MENTORS</a>
+                <a href="">DESIGNER</a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer2">
+            <div class="copyright">
+                <p>&copy 2021 Unity Coding Inc.</p>
+                <p>All Right Reserved</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/diwakar.giri.792" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/mr._diwakar_011/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCuUJmEFZu4z46ddopk7A8JQ" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/diwakar-giri-2a263b192/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    </body>
+    </html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fonts/font-awesome.css">
+    <link rel="stylesheet" href="fonts/google-fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="basics.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="..\Home page\index.php"><img src="Logo.png" alt="Unity Coding"></a>
+            <h2>Unity Coding</h2>
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="active"><i class="fa fa-home" aria-hidden="true"></i><a href="..\Home page\index.php">Home</a></li>
+                <li><i class="fa fa-user" aria-hidden="true"></i><a href="..\About US\about.html" target="_blank">About Us</a></li>
+                <li><i class="fa fa-book" aria-hidden="true"></i><a href="..\Courses\course.php" target="_blank">Courses</a>
+                </li>
+                <li><i class="fa fa-clone" aria-hidden="true"></i><a href="#">Services</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li class="hover-me"><a href="#course">eLearning</a></li>
+                            <li class="hover-me"><a href="#Games">Gaming</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="..\Contact Us\contact.php" target="_blank">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container3">
+    <h1>HTML Basic Examples</h1>
+    <hr>
+    <p style="text-align: center;">In this chapter we will show some basic HTML examples. <br>
+      Don't worry if we use tags you have not learned about yet.</p>
+    <hr>
+    
+    <h2>HTML Documents</h2>
+    <p>All HTML documents must start with a document type declaration: <code style="color: crimson; background-color:lightgrey;">&lt;!DOCTYPE html&gt;</code>.</p>
+    <p>The HTML document itself begins with <code style="color: crimson; background-color:lightgrey;">&lt;html&gt;</code> and ends with <code style="color: red; background-color:lightgrey;">&lt;/html&gt;</code>.</p>
+    <p>The visible part of the HTML document is between <code style="color: crimson; background-color:lightgrey;">&lt;body&gt;</code> and <code style="color: red; background-color:lightgrey;">&lt;/body&gt;</code>. </p>
+    <div class="w3-example">
+    <h3>Example</h3>
+    <div class="example1">
+    &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;My First Heading&lt;/h1&gt;<br>&lt;p&gt;My first paragraph.&lt;/p&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</div>
+    </div>
+    
+    <h2>The &lt;!DOCTYPE&gt; Declaration</h2>
+    <p>The <code style="color: crimson; background-color:lightgrey;">&lt;!DOCTYPE&gt;</code> declaration represents the document type, and helps browsers to display web pages correctly.</p>
+    <p>It must only appear once, at the top of the page (before any HTML tags). </p>
+    <p>The <code style="color: crimson; background-color:lightgrey;">&lt;!DOCTYPE&gt;</code> declaration is not case sensitive.</p>
+    <p>The <code style="color: crimson; background-color:lightgrey;">&lt;!DOCTYPE&gt;</code> declaration for HTML5 is:</p>
+    <div class="example2">
+    <div class="example21">
+    &lt;!DOCTYPE html&gt;
+    </div>
+    </div>
+    
+    <h2>HTML Headings</h2>
+    <p>HTML headings are defined with the <code style="color: crimson; background-color:lightgrey;">&lt;h1&gt;</code> to <code style="color: crimson; background-color:lightgrey;">&lt;h6&gt;</code> tags.</p>
+    <p><code style="color: crimson; background-color:lightgrey;">&lt;h1&gt;</code> defines the most important heading. <code style="color: crimson; background-color:lightgrey;">&lt;h6&gt;</code> defines the least important 
+    heading:&nbsp;</p>
+    <div class="example1">
+    <h3>Example</h3>
+    &lt;h1&gt;This is heading 1&lt;/h1&gt;<br>
+    &lt;h2&gt;This is heading 2&lt;/h2&gt;<br>
+    &lt;h3&gt;This is heading 3&lt;/h3&gt;
+    </div>
+    
+    
+    <h2>HTML Paragraphs</h2>
+    <p>HTML paragraphs are defined with the <code style="color: crimson; background-color:lightgrey;">&lt;p&gt;</code> tag:</p>
+    <div class="example1">
+    <h3>Example</h3>
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+    &lt;p&gt;This is another paragraph.&lt;/p&gt;
+    </div>
+    
+    <h2>HTML Links</h2>
+    <p>HTML links are defined with the <code style="color: crimson; background-color:lightgrey;">&lt;a&gt;</code> tag:</p>
+    <div class="example1">
+    <h3>Example</h3>
+    &lt;a href=&quot;https://www.w3schools.com&quot;&gt;This is a link&lt;/a&gt;
+    </div>
+    <p>The link's destination is specified in the <code style="color: crimson; background-color:lightgrey;">href</code> attribute.&nbsp;</p>
+    <p>Attributes are used to provide additional information about HTML elements.</p>
+    <p>You will learn more about attributes in a later chapter.</p>
+    
+    <h2>HTML Images</h2>
+    <p>HTML images are defined with the <code style="color: crimson; background-color:lightgrey;"class="w3-codespan">&lt;img&gt;</code> tag.</p>
+    <p>The source file (<code style="color: crimson; background-color:lightgrey;">src</code>), alternative text (<code class="w3-codespan">alt</code>), 
+    <code style="color: crimson; background-color:lightgrey;">width</code>, and <code style="color: crimson; background-color:lightgrey;">height</code> are provided as attributes:</p>
+    <div class="example1">
+    <h3>Example</h3>
+    &lt;img src=&quot;w3schools.jpg&quot; alt=&quot;W3Schools.com&quot; width=&quot;104&quot; height=&quot;142&quot;&gt;
+    </div>
+    
+    <h2>How to View HTML Source?</h2>
+    <p>Have you ever seen a Web page and wondered &quot;Hey! How did they do that?&quot;</p>
+    <h3>View HTML Source Code:</h3>
+    <p>Right-click in an HTML page and select &quot;View Page Source&quot; (in 
+    Chrome) or &quot;View Source&quot; (in Edge), or similar in other browsers. This will open a window 
+    containing the HTML source code of the page.</p>
+    <h3>Inspect an HTML Element:</h3>
+    <p>Right-click on an element (or a blank area), and choose &quot;Inspect&quot; or 
+    &quot;Inspect Element&quot; to see what elements are made up of (you will see both 
+    the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the 
+    Elements or Styles panel that opens.</p>
+    <br>
+</div>
+<hr>
+<ul class="navigation">
+    <li><a href="" class="prev"> prev </a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Introduction.html" target="_blank">1</a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Editors.html" target="_blank">2</a></li>
+    <li class="pageNumber active"><a href="..\Html tutorial\Html Basics.html" target="_blank">3</a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Elements.html" target="_blank">4</a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Attribute.html" target="_blank">5</a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Heading.html" target="_blank">6</a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Paragraph.html" target="_blank">7</a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Style.html" target="_blank">8</a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Formatting.html" target="_blank">9</a></li>
+    <li class="pageNumber"><a href="..\Html tutorial\Links.html" target="_blank">10</a></li>
+    <li><a href="" class="next"> Next </a></li>
+  </ul>
+<hr>
+
+<script type="text/javaScript">
+    $(document).ready(function(){
+      $('.next').click(function(){
+        $('.navigation').find('.pageNumber.active').next().addClass('active');
+        $('.navigation').find('.pageNumber.active').prev().addClass('active');
+      })
+      $('.prev').click(function(){
+          $('.navigation').find('.pageNumber.active').prev().addClass('active');
+          $('.navigation').find('.pageNumber.active').next().addClass('active');
+    })
+  </script>
+
+
+    <footer>
+        <div class="footer1">
+            <div class="link1">
+                <h3>ABOUT UNITY CODING</h3>
+                <p>This is E-learning cum gaming website developed for the persons who want to learn
+                    the development of games and other applications and also want to play online games
+                    but they have don’t have enough space in their phone to download so we develop website
+                    games so that they can play games by simply login to our website.</p>
+            </div>
+            <div class="link2">
+                <h3>LEARNING</h3>
+                <a href="">ABOUT</a>
+                <a href="">GAMING</a>
+                <a href="">COURSES</a>
+            </div>
+            <div class="link3">
+                <h3>ENGAGE US</h3>
+                <a href="">BLOG</a>
+                <a href="">CONTACT</a>
+                <a href="">MARKETTING</a>
+            </div>
+            <div class="link4">
+                <h3>LEGAL</h3>
+                <a href="">TEAM</a>
+                <a href="">MENTORS</a>
+                <a href="">DESIGNER</a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer2">
+            <div class="copyright">
+                <p>&copy 2021 Unity Coding Inc.</p>
+                <p>All Right Reserved</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/diwakar.giri.792" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/mr._diwakar_011/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCuUJmEFZu4z46ddopk7A8JQ" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/diwakar-giri-2a263b192/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
