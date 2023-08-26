@@ -7,13 +7,14 @@ There are 4 Games in this Website ,
 4. Tic Tac Toe.
 
 Also one can Learn programming languages.
-In this Website there are 6 Programming Languages
-1.HTML
-2.CSS
-3.JavaScript
-4.Python
-5.PHP
-6.C++.
+In this Website there are 6 Programming Languages ,
+1. HTML
+2. CSS
+3. JavaScript
+4. Python
+5. PHP
+6. C++
+
 
 In UI of this webisite is very User Friendly and UX is also Good aslo Very easy and Good.
 
